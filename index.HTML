@@ -7,15 +7,22 @@
     <title>1 Player Dice</title>
 </head>
 <body>
+    <div class="Startoverbutton">
+        <button type="button" class="sobutn" id="sobutn"
+            onClick="startOver()">
+            Start Over
+        </button>
+    </div>
+
     <div class="container">
-        <h1>Player 1</h1>
+        <h1 id="head">Player 1</h1>
         <h2 id="scoreShow">0</h2>
         <div class="dice">
             <img id="die" src = "img/dice6.png">
         </div>
     </div>
     <div class="container bottom">
-        <button type="button" class="butn"
+        <button type="button" class="butn" id="roll"
         onClick="rollTheDice()">
         Roll
     </button>

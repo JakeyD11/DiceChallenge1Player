@@ -25,3 +25,11 @@ h1 {
 #die {
     visibility: hidden;
 }
+.Startoverbutton {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -50%;
+    visibility: hidden;
+}
