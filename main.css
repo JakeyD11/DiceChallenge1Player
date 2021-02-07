@@ -33,3 +33,10 @@ h1 {
     top: -50%;
     visibility: hidden;
 }
+.winScore {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -50%;
+}

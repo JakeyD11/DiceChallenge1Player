@@ -1,7 +1,7 @@
 let score = 0;
-const image = document.getElementById("die")
-
-
+const image = document.getElementById("die");
+let winScore =30;
+const input = document.getElementById("inputnum");
 
 function rollTheDice(){
         let randomNumber = Math.ceil(Math.random() * 6);
@@ -18,7 +18,7 @@ function rollTheDice(){
             document.getElementById("sobutn").style.visibility ="visible";
             document.getElementById("roll").style.visibility ="hidden";
         }
-        if (score >= 20) {
+        if (score >= winScore) {
             document.getElementById("head").textContent = "You Win!";
             document.getElementById("sobutn").style.visibility = "visible";
             document.getElementById("roll").style.visibility ="hidden";
@@ -32,4 +32,12 @@ function startOver(){
     document.getElementById("die").style.visibility = "hidden";
     document.getElementById("sobutn").style.visibility ="hidden";
     document.getElementById("roll").style.visibility ="visible";
+    document.getElementById("inputnum").style.visibility = "visible";
+    document.getElementById("score").style.visibility = "visible";
+}
+
+function setScore(){
+    winScore = inputnum.value;
+    document.getElementById("inputnum").style.visibility = "hidden";
+    document.getElementById("score").style.visibility = "hidden";
 }
